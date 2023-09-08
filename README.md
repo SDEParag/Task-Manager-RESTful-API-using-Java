@@ -40,7 +40,7 @@ This is a simple RESTful API for managing tasks built with Java (Spring Boot) an
 ```http
 mvn spring-boot:run
 ```
-Once the application is running, you can use tools like Postman to interact with the API. The API will be available at http://localhost:8080/tasks. 
+* Once the application is running, you can use tools like Postman to interact with the API. The API will be available at http://localhost:8080/tasks. 
 
 * Please make sure you have the necessary prerequisites (Java, Maven, etc.) installed on your system to successfully build and run the project. Additionally, ensure that your project's dependencies are correctly configured as specified in your project's pom.xml file.
 
