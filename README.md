@@ -21,33 +21,33 @@ This is a simple RESTful API for managing tasks built with Java (Spring Boot) an
 * MySQL database server with a assignment.task database and task table set up. You can find the schema in the Database Setup section.
 
 # Installation
-Clone the repository:
+* Clone the repository:
+```http
+  git clone https://github.com/SDEParag/Task-Manager-RESTful-API-using-Java.git
+```
+* Navigate to the project directory:
+```http
+  cd Task-Manager-RESTful-API-using-Java
+```
+* Build the project using Maven:
+```http
+  mvn clean install
+```
 
-shell
-Copy code
-git clone https://github.com/your-username/task-manager-api.git
-Navigate to the project directory:
+# Usage:
 
-shell
-Copy code
-cd task-manager-api
-Build the project using Maven:
-
-shell
-Copy code
-mvn clean install
-Run the Spring Boot application:
-
-shell
-Copy code
+* Run the Spring Boot application:
+```http
 mvn spring-boot:run
-Usage
-Once the application is running, you can use tools like Postman to interact with the API. The API will be available at http://localhost:8080/tasks. Refer to the API Endpoints section for details on available endpoints and how to use them.
+```
+Once the application is running, you can use tools like Postman to interact with the API. The API will be available at http://localhost:8080/tasks. 
 
+* Please make sure you have the necessary prerequisites (Java, Maven, etc.) installed on your system to successfully build and run the project. Additionally, ensure that your project's dependencies are correctly configured as specified in your project's pom.xml file.
 
 
 # API Endpoints
-
+* The application is configured to run on port 8080 by default. Please ensure that you use the correct port number when making API requests. If you need to change the port number, you can do so by modifying the server.port property in the application.properties file.
+* server.port : 8080 
 ### Create a Task
 
 ```http
@@ -129,14 +129,3 @@ Select -> Body -> Row -> JSON
   - Status Code: `204 No Content`
 ```
 
-# Getting Started
-
-1. Clone this repository.
-
-2. Configure your database in the application.properties.
-
-3. Build and run the application using Maven or your preferred IDE.
-
-4. Access the API using a tool Postman to Test The Rest API Point.
-
-## Example Requests
