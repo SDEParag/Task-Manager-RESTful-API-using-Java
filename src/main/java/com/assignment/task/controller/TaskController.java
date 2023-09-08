@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/tasks")
@@ -26,7 +27,8 @@ public class TaskController {
     }
 
     @PutMapping("/{id}")
-    public Task updateTaskStatus(@PathVariable Long id, @RequestParam String status) {
+    public Task updateTaskStatus(@PathVariable Long id, @RequestBody Map<String, String> statusMap) {
+        String status = statusMap.get("status");
         return taskService.updateTaskStatus(id, status);
     }
 
