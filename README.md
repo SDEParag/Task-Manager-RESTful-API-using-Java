@@ -118,7 +118,7 @@ Select -> Body -> Row -> JSON
 ```
 
 ### Delete Task
-* Description: Delete an existing task.
+* Description: Delete an existing task by ID.
 ```http
 - Method: `DELETE`: http://localhost:8080/tasks/1
 
