@@ -47,7 +47,9 @@ mvn spring-boot:run
 
 # API Endpoints
 * The application is configured to run on port 8080 by default. Please ensure that you use the correct port number when making API requests. If you need to change the port number, you can do so by modifying the server.port property in the application.properties file.
-* server.port : 8080 
+* Server Port Configuration
+server.port=8080
+
 ### Create a Task
 
 ```http
