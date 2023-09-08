@@ -44,7 +44,6 @@ mvn spring-boot:run
 
 * Please make sure you have the necessary prerequisites (Java, Maven, etc.) installed on your system to successfully build and run the project. Additionally, ensure that your project's dependencies are correctly configured as specified in your project's pom.xml file.
 
-
 # API Endpoints
 * The application is configured to run on port 8080 by default. Please ensure that you use the correct port number when making API requests. If you need to change the port number, you can do so by modifying the server.port property in the application.properties file.
 * Server Port Configuration
